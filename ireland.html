@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Examin - Education and LMS Template">
+
+    <!-- ========== Page Title ========== -->
+    <title>Elite Overseas</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+     <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <style>
+    
+
+
+        table{
+          width: 100%;
+          border-collapse: collapse;
+          text-align: left;
+          overflow: hidden;
+          
+         td, th{
+            border-top: 1px solid #ECF0F1;
+            padding: 10px;
+          }
+          
+          td{
+            border-left: 1px solid #ECF0F1;
+            border-right: 1px solid #ECF0F1;
+          }
+          
+          th{
+            background-color: #4ECDC4;
+          }
+          
+          tr:nth-of-type(even) td{
+            background-color: lighten(#4ECDC4, 35%);
+          }
+          
+          .total{
+            th{
+              background-color: white;
+            }
+            
+            td{
+              text-align: right;
+              font-weight: 700;
+            }
+          }
+        }
+        
+          .mobile-header1{
+            display: none;
+          }
+        
+        @media only screen and (max-width: 760px){
+          p{
+            display: block;
+            font-weight: bold;
+          }
+          
+          table{
+            tr{
+              td:not(:first-child), th:not(:first-child), td:not(.total-val){
+                display: none;
+              }
+              
+              &:nth-of-type(even) td:first-child{
+                background-color: lighten(#4ECDC4, 35%);
+              }
+              &:nth-of-type(odd) td:first-child{
+                background-color: white;
+              }
+              
+              &:nth-of-type(even) td:not(:first-child){
+                background-color: white;
+              }
+              
+              th:first-child{
+                width: 100%;
+                display:block;
+              }
+              
+              th:not(:first-child){
+                width: 40%;
+                transition: transform 0.4s ease-out;
+                transform:translateY(-9999px);
+                position: relative;
+                z-index: -1;
+              }
+              
+              td:not(:first-child){
+                transition: transform 0.4s ease-out;
+                transform:translateY(-9999px);
+                width: 60%;
+                position: relative;
+                z-index: -1;
+              }
+              
+              td:first-child{
+                display: block;
+                cursor: pointer;
+              }
+              
+              &.total th{
+                width: 25%;
+                display: inline-block;
+              }
+              
+              td.total-val{
+                display: inline-block;
+                transform: translateY(0);
+                width: 75%;
+              }
+            }
+          }
+        }
+        
+        @media only screen and (max-width: 300px){
+          table{
+            tr{
+              th:not(:first-child){
+                width: 50%;
+                font-size: 14px;
+              }
+              
+              td:not(:first-child){
+                width: 50%;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+          </style>
+</head>
+
+<body>
+    <div class="right_menu">  
+        <div class="social-link dark">
+         <a href="https://wa.me/+919900011398" class="btn btn-outline-dark btn-social">
+            <i class="fab fa-whatsapp"></i>
+             <span class="mobile_show">WhatsApp</span></a> 
+                <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                <i class="fas fa-user"></i>
+                     <span class="mobile_show">Apply Now </span></a> 
+                    </div> 
+                </div>
+
+    <div class="modal fullscreen-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-fullscreen">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel" style="align-items: center;">Give us A Chance
+                To build your journey <br> Choose, What do you want to study Abroad?</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                 <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h4 >Bachelor</h4>
+                    <a href="https://forms.gle/Dye4WzqrKhGYPpWA8" class="btn btn-theme effect btn-md" data-animation="animated slideInUp">Apply now</a>   
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h4 >Master</h4>
+                    <a href="https://forms.gle/BpjVcmExLkdYAtvH6" class="btn btn-theme effect btn-md" data-animation="animated slideInUp">Apply now</a>   
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h4 >Doctorial</h4>
+                    <a href="https://forms.gle/E49EwmgxtewjHDKo9" class="btn btn-theme effect btn-md" data-animation="animated slideInUp">Apply now</a>   
+                </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+
+    <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area address-two-lines bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 address-info">
+                    <div class="info box">
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-map"></i> Address</span>Bengaluru, 560054
+                            </li>
+                           <li>
+                                <span><i class="fas fa-envelope-open"></i> Email</span><a href = "mailto:Eliteoverseasadmissions@gmail.com"> Eliteoverseasadmissions@gmail.com</a>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone"></i> Contact</span><a href="tel:+919900011398">+91 9900011398</a>
+                                 <a href="tel:08035429997">08035429997</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-login text-right col-md-4">
+          
+                    <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fas fa-user"></i> Apply Now
+                    </a>
+                    <a href="contact.html">
+                        <i class="fas fa-user"></i> Enquiry Now
+                    </a>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-sticky bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                  
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.png" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                      <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                       
+                         <li>
+                            <a href="about-us.html">About </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Countries</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="australia.html">Study In Australia</a></li>
+                                <li><a href="cannada.html">Study In Canada </a></li>
+                                  <li><a href="germany.html">Study In Germany </a></li>
+                                    <li><a href="netharland.html">Study In Netherlands </a></li>
+                                     
+                                      <li><a href="singapore.html">Study In Singapore </a></li>
+                                     
+                                          <li><a href="sweden.html">Study In Sweden </a></li>
+                                            <li><a href="uk.html">Study In United Kingdom </a></li>
+                                              <li><a href="us.html">Study In United States </a></li>
+                                                  <li><a href="newzzland.html">Study In New Zealand </a></li>
+                                                <li><a href="ireland.html">Study In Ireland </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Services</a>
+                             <ul class="dropdown-menu">
+                                           
+                                             <li><a href="careercoun.html">Career Counseling </a></li>
+                                             <li><a href="examprep.html">Exam Preparation </a></li>  
+                                             <li><a href="Applicationasss.html">Application Assistance </a></li>
+                                             <li><a href="Applicationschl.html">Application &#038; Scholarship </a></li>
+                                             <li><a href="visa.html">Visa Guidance </a></li>    
+                                            <li><a href="predepature.html">Pre Departure Support </a></li> 
+                                            <li><a href="immigration.html">Immigration </a></li>    
+                                               
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Training</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="IELTS.html">IELTS</a></li>
+                                   <li><a href="Tofel.html">TOFEL  </a></li>
+                                  <li><a href="germanlang.html">German Language  </a></li>
+                            </ul>
+                        </li>
+                            
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url(assets/img/gall/m2.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Study In Ireland</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                      
+                        <li class="active">Study In Ireland</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+    <div class="about-area" style="margin-top: 20px;">
+        <div class="container">
+            <h1 style="text-align: center;"><b>Study in Ireland</b></h1>
+            <div class="row">
+          <div class="seperator col-md-8">
+                  <img src="assets/img/gall/a.png">  
+                      </div>
+        <div class="seperator col-md-4 form">
+            
+                <div class="heading">
+                    <h3 style="text-align: center; margin-top: 20px;"><b>Contact Through Us</b></h3>
+                  
+                </div>
+                <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                <span class="alert-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                <span class="alert-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group">
+                                <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                <span class="alert-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group comments">
+                                <textarea class="form-control" id="comments" name="comments" placeholder="Message*"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <button type="submit" name="submit" id="submit">
+                                Send Message <i class="fa fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Alert Message -->
+                    <div class="col-md-12 alert-notification">
+                        <div id="message" class="alert-msg"></div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+            </div>
+        </div>
+    <div class="about-area ">
+        <div class="container">
+ 
+    <div class="info" style="margin-top: 40px;">
+        <h3>
+            <b>Here’s a comprehensive guide for all Indian students who want to study in Ireland</b>
+        </h3>
+    <p>
+        Consistently ranked in the world’s top 20 countries for exceptional quality of life, peace, and human development, Ireland is increasingly becoming a top choice among Indian students. With a vibrant culture that rewards entrepreneurial spirit and offers multiple opportunities to grow professionally, the country will teach you lessons that go beyond the class curriculum. Renowned universities such as Trinity College Dublin and University College Dublin provide excellent academic programs and foster innovation. The combination of Ireland’s high-quality education system and welcoming environment makes it an ideal destination for Indian students.</p>
+        <h3>
+            <b>Student visa requirements for Ireland</b>
+        </h3>
+<p>Explore diverse study visas and their specific application criteria for a tailored academic journey.</p>
+     
+<table>
+    <thead style="       background-color: #4399b6;">
+    <tr class="table-headers">
+    <th>	S.No.</th>
+    <th>Duration of study</th>
+    <th>Visa type</th>
+    </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="background-color: #e0e2e2;">
+      <td>1</td>
+      <th class="mobile-header1">Number</th><td>Less than three months</td>
+      <th class="mobile-header1">Market rate</th><td>C Study visa</td>
+    </tr>
+    <tr style="background-color: #84aff9;">
+        <td>2</td>
+        <th class="mobile-header1">Number</th><td>	
+            More than three months</td>
+        <th class="mobile-header1">Market rate</th><td>D Study visa</td>
+      </tr>
+   
+  
+    </tbody>
+</table>
+
+<h3 style="margin-top: 15px;">How much will it cost to study in the Ireland?</h3>
+<p>Typically, humanities, education, and arts courses tend to be more affordable, whereas fields like medicine, engineering, business, and management often incur higher expenses. Postgraduate studies abroad generally entail higher tuition fees, with costs varying based on the program.
+
+</p>
+<table>
+    <thead style="       background-color: #4399b6;">
+    <tr class="table-headers">
+    <th>	S.No.</th>
+    <th>Study program</th>
+    <th>	
+        Average fees (in Euros*)</th>
+    </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="background-color: #e0e2e2;">
+      <td>1</td>
+      <th class="mobile-header1">Number</th><td>Undergraduate program</td>
+      <th class="mobile-header1">Market rate</th><td>	
+        €9,850 to €25,500 annually</td>
+    </tr>
+    <tr style="background-color: #84aff9;">
+        <td>2</td>
+        <th class="mobile-header1">Number</th><td>	
+           	
+Postgraduate masters degree</td>
+        <th class="mobile-header1">Market rate</th><td>€9,500 to €34,500 annually</td>
+      </tr>
+      <tr style="background-color: #e0e2e2;">
+        <td>3</td>
+        <th class="mobile-header1">Number</th><td>	
+           	
+            Doctoral degree</td>
+        <th class="mobile-header1">Market rate</th><td>€9,500 to €34,500 annually</td>
+      </tr>
+   
+  
+    </tbody>
+</table>
+<h3 style="margin-top: 15px;">Calculate how much it will cost to live in Ireland using our cost-calculator tool</h3>
+<h5>Education system in Ireland</h5>
+<p>Study levels in Ireland</p>
+<p>The education system in Ireland encompasses four primary levels, each serving a distinct purpose in shaping the academic and professional trajectories of its students. These levels include primary education, which lays the foundation for learning; secondary education, where students delve deeper into various subjects and prepare for further studies or entry into the workforce; further education, providing specialized training and skills development for specific careers or interests; and higher education, offering undergraduate and postgraduate degrees across a wide range of disciplines. While bearing some similarities to the UK system, Ireland's education framework also reflects its unique cultural and historical influences, fostering a rich and diverse learning environment.
+
+</p>
+</div>
+    <ul>
+        <li>
+        <i class="fas fa-edit"></i>  
+            <span>Primary education including pre-primary</span>
+        </li>
+        <li>
+        <i class="fas fa-edit"></i>  
+            <span>Post primary education</span>
+        </li>
+        <li>
+        <i class="fas fa-edit"></i>  
+            <span>Further education and training
+
+            </span>
+        </li>
+        <li>
+        <i class="fas fa-edit"></i>  
+            <span>Higher education
+
+            </span>
+        </li>
+        <li>
+
+     
+    </ul>
+    <div class="info" style="margin-top: 30px;">
+        <h3>
+            Know all about the intakes available in the Ireland
+        </h3>
+<p>
+    In Ireland, universities and colleges typically offer two main intakes for various programs: the autumn intake, which begins in September or October, and the spring intake, commencing in January or February. The autumn intake serves as the primary entry point for most undergraduate and postgraduate programs, aligning with the start of the academic year. Application processes for autumn intake generally open well in advance, often the year before, with varying deadlines depending on the institution and program. Conversely, the spring intake provides an alternative opportunity, particularly for select postgraduate programs, allowing students to start their studies in the spring semester. Application deadlines for spring intake tend to fall earlier in the year, necessitating timely preparation. Prospective students should consult their chosen institutions for specific intake dates and application deadlines tailored to their desired programs.
+</p>
+    </div> 
+    <table>
+        <thead style="       background-color: #4399b6;">
+        <tr class="table-headers">
+        <th>	Intake</th>
+        <th>	
+            Deadline</th>
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr style="background-color: #e0e2e2;">
+      
+          <th class="mobile-header1">Number</th><td>Semester 1 (September intake)</td>
+          <th class="mobile-header1">Market rate</th><td>February-July</td>
+        </tr>
+        <tr style="background-color: #84aff9;">
+         
+            <th class="mobile-header1">Number</th><td>	
+                Semester 2 (January intake)</td>
+            <th class="mobile-header1">Market rate</th><td>September-October</td>
+          </tr>
+       
+      
+        </tbody>
+    </table>
+
+          <!-- Start Accordion -->
+          <div class="acd-items acd-arrow" style="margin-top: 15px;">
+            <div class="panel-group symb" id="accordion">
+                <div class="panel panel-default">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#ac1">
+                                1. How much does it cost to study in Ireland?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="ac1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p>
+                                The cost of tuition fees varies depending on the type of qualification and institution you choose. To cover your tuition fees, you should budget approximately €10,000 to €25,000 per year. Here is an estimate of the annual tuition fees for different programs:
+                              </p>
+                              <p>Undergraduate program: €9,850 to €25,500</p>
+                              <p>Postgraduate master's degree: €9,500 to €34,500
+                            </p>
+                          <p>Doctoral degree: €9,500 to €34,500</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#ac2">
+                                2. What are the best student cities in Ireland?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="ac2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                Here are the top student cities in Ireland:</p>
+                                <p>City 1: Dublin</p>
+                                <p>City 2: Cork</p>
+                                <p>City 3: Limerick</p>
+                                <p>City 4: Galway</p>
+                                <p>City 5: Maynooth</p>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#ac3">
+                                3. Is IELTS required to work in Ireland?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="ac3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                Minimum IELTS Score required to study in Ireland is 6.5 overall and no individual band below 6  </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#ac4">
+                                4. What are the requirements to study in Ireland?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="ac4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                Admission requirements in Ireland differ based on the university and chosen major. However, international students applying to universities in Ireland usually need to submit the following documents:
+                             </p>
+                             <p>University course or degree transcripts</p>
+                             <p>English language test results, such as IELTS</p>
+                             <p>Work experience and samples (if required)</p>
+                             <p>GMAT or GRE scores</p>
+                             <p>Statement of purpose</p>
+                             <p>Recommendation letter
+
+                             </p>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#ac5">
+                                5. What are the requirements for Ireland student visa?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="ac5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                Here are the requirements for a student visa:
+                            </p> 
+                            <p>Fill out the application form.</p>
+                            <p>Provide an application letter.</p>
+                            <p>Include two passport-sized photographs taken in the last 6 months.</p>
+                            <p>Submit your current passport and copies of previous passports.</p>
+                            <p>Present evidence of enrolment in the course.</p>
+                            <p>Provide an explanation for any gaps in your educational history.</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#ac6">
+                                6. Can I study in Ireland backlog?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="ac6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                               Elite Overseas typically consider applications with a maximum of four to five backlogs, although some may accept a maximum of two to three backlogs.</p>
+                         </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- End Accordion -->
+ 
+</div></div>
+
+
+                             
+<a href="https://api.whatsapp.com/send?phone=9900011398&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+<!-- Start Footer 
+============================================= -->
+<footer class="bg-dark default-padding-top text-light">
+    <div class="container">
+        <div class="row">
+            <div class="f-items">
+                <div class="col-md-4 item">
+                    <div class="f-item">
+                        <img src="assets/img/logo-light.png" alt="Logo">
+                        <p>
+                            Elite Overseas Education unlocks boundless educational opportunities worldwide. We excel in bridging the chasm between ambitious students yearning for premier education abroad and the esteemed institutions they aspire to join. Our mission is to facilitate seamless admissions into accredited universities of global repute, empowering students to access the finest educational experiences around the world.
+
+                        </p>
+                    
+                       <!-- Start Sidebar Item -->
+                       <div class="sidebar-item social-sidebar">
+                        <div class="title">
+                            <h4>follow us</h4>
+                        </div>
+                            <div class="sidebar-item social-sidebar">
+                    
+                        <div class="sidebar-info">
+                            <ul>
+                                <li class="facebook">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                   <li class="twitter">
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                           
+                                <li class="linkedin">
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- End Sidebar Item -->
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 item">
+                    <div class="f-item link">
+                        <h4>Country</h4>
+                        <ul>
+                            <li><a href="australia.html">Study In Australia</a></li>
+                            <li><a href="cannada.html">Study In Canada </a></li>
+                              <li><a href="germany.html">Study In Germany </a></li>
+                                <li><a href="netharland.html">Study In Netherlands </a></li>
+                                   <li><a href="ireland.html">Study In Ireland </a></li>
+                                  <li><a href="singapore.html">Study In Singapore </a></li>
+                                 
+                              
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 item">
+                    <div class="f-item link">
+                        <ul>
+                            <li><a href="sweden.html">Study In Sweden </a></li>
+                            <li><a href="uk.html">Study In United Kingdom </a></li>
+                              <li><a href="us.html">Study In United States </a></li>
+                                  <li><a href="newzzland.html">Study In New Zealand </a></li>
+                                            <li><a href="ireland.html">Study In  Ireland </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="f-item address">
+                        <h4>Address</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-envelope"></i> 
+                                <p>Email <span><a href="mailto:support@validtheme.com">Eliteoverseasadmissions@gmail.com</a></span></p>
+                            </li>
+                            <li>
+                                <i class="fas fa-map"></i> 
+                                <p>Office <span>#313, 3rd Floor,1st cross, 1st stage, above axis bank, 2nd Phase, Mathikere, Bengaluru, Karnataka 560054</span></p>
+                            </li>
+                        </ul>
+                        <div class="opening-info">
+                            <h5>Opening Hours</h5>
+                            <ul>
+                                <li> <span> Mon - Sat :  </span>
+                                  <div class="pull-right"> 10.00 am - 6.30 pm </div>
+                                </li>
+                             
+                                <li> <span> Sun : </span>
+                                  <div class="pull-right closed"> Closed </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Start Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <p>&copy; Copyright 2024. All Rights Reserved by <a href="#">Bright Ads Digital India Pvt Ltd</a></p>
+                    </div>
+                    <div class="col-md-6 text-right link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms of user</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Bottom -->
+</footer>
+<!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/loopcounter.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(window).on('resize', function() {
+
+if ($(this).width() < 760) {
+ $('tr td:first-child').click(function(){
+
+    $(this).siblings().css({'display': 'inline-block'});
+
+    var $this = $(this);
+    setTimeout(function(){
+    $this.siblings().css('transform', 'translateY(0)'); 
+   },0);
+
+    $('tr td:first-child').not($(this)).siblings().css({'display': 'none', 'transform': 'translateY(-9999px)'});
+});  
+} else if ($(this).width() > 760) {
+  //unbind click : name is not clickable when screen is > 700px
+  $( "tr td:first-child").unbind( "click" );
+  //remove with jquery added styles
+  $('tr td:first-child').siblings().css({'display': '', 'transform': ''});
+}
+
+}).resize();
+</script>
+</body>
+</html>
